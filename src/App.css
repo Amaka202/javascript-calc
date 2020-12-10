@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: grey;
+    font-family: Russo One;
+}
+#drum-machine{
+    padding: 2rem;
+    margin: auto;
+    margin-top: 20%;
+    outline: 5px solid orange;
+    position: relative;
+    width: 150px;
+    text-align: center;
+    background-color: #b3b3b3;
+}
+
+.drum-pad{
+    margin: 0.3rem;
+    background-color: #808080;
+    border-radius: 5px;
+    box-shadow: black 3px 3px 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    font-weight: 900;
+}
+
+.flexed{
+    display: flex;
+    justify-content: space-around;
+}
+
+.drum-pad:active{
+    background-color: orange;
+}
+
+#display{
+    /* height: 50px;
+    width: 50px; */
+    background-color: #808080;
+    margin-top: 5rem;
+}
