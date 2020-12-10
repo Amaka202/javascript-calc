@@ -6,7 +6,7 @@ export default class Keypad extends Component {
             <div className="keypad">
                 <div className="button">
                 <button name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>
-                <button name="CLEAR" onClick={e => this.props.onClick(e.target.name)} id="clear">C</button><br/>
+                <button name="CLEAR" onClick={e => this.props.onClick(e.target.name)} id="clear">CLEAR</button><br/>
 
 
                 <button name="1" onClick={e => this.props.onClick(e.target.name)} id="one">1</button>

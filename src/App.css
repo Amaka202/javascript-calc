@@ -17,7 +17,7 @@ body{
 
 .keypad button{
     height: 50px;
-    width: 50px;
+    width: 70px;
     margin: 5px;
     background-color:  rgb(83, 157, 223);
     border: none;
