@@ -1,44 +1,39 @@
 body{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: grey;
-    font-family: Russo One;
 }
-#drum-machine{
-    padding: 2rem;
-    margin: auto;
-    margin-top: 20%;
-    outline: 5px solid orange;
-    position: relative;
-    width: 150px;
+
+
+
+.keypad{
     text-align: center;
-    background-color: #b3b3b3;
 }
 
-.drum-pad{
-    margin: 0.3rem;
-    background-color: #808080;
+.title{
+    text-align: center;
+    color: rgb(83, 157, 223);
+}
+
+.keypad button{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color:  rgb(83, 157, 223);
+    border: none;
     border-radius: 5px;
-    box-shadow: black 3px 3px 5px;
-    cursor: pointer;
-    width: 100px;
-    height: 80px;
-    font-weight: 900;
-}
-
-.flexed{
-    display: flex;
-    justify-content: space-around;
-}
-
-.drum-pad:active{
-    background-color: orange;
 }
 
 #display{
-    /* height: 50px;
-    width: 50px; */
-    background-color: #808080;
-    margin-top: 5rem;
+    text-align: center;
+    
+    margin-bottom: 1.5rem;
+}
+
+#display span{
+    display: inline-block;
+    width: 80px;
+    padding: 1.5rem;
+    background-color:  rgb(160, 200, 235);
+    border-radius: 10px;
 }

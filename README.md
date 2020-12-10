@@ -1,4 +1,4 @@
-drum machine that when click makes an appropriate sound
+A non- scientific calculator build with react 
  
 # Getting Started with Create React App
 

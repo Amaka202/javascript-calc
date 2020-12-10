@@ -1,23 +1,24 @@
 import React, { Component } from 'react'
 import Keypad from './Components/Keypad';
 import Output from './Components/Output';
+import "./App.css"
 
 class App extends Component {
   constructor(){
       super();
 
       this.state = {
-          result: ""
+          output: ""
       }
   }
 
-  onClick = (button) => {
+  handleClick = (button) => {
 
       if(button === "="){
           this.calculate()
       }
 
-      else if(button === "C"){
+      else if(button === "CLEAR"){
           this.reset()
       }
       else if(button === "CE"){
@@ -26,7 +27,7 @@ class App extends Component {
 
       else {
           this.setState({
-              result: this.state.result + button
+            output: this.state.output + button
           })
       }
   };
@@ -35,12 +36,12 @@ class App extends Component {
   calculate = () => {
       try {
           this.setState({
-              // eslint-disable-next-line
-              result: (eval(this.state.result) || "" ) + ""
+
+            output: (eval(this.state.output) || "" )
           })
       } catch (e) {
           this.setState({
-              result: "error"
+            output: "Synthax Error"
           })
 
       }
@@ -48,23 +49,25 @@ class App extends Component {
 
   reset = () => {
       this.setState({
-          result: ""
+        output: ""
       })
   };
 
   backspace = () => {
       this.setState({
-          result: this.state.result.slice(0, -1)
+        output: this.state.output.slice(0, -1)
       })
   };
 
   render() {
       return (
           <div>
-              <div className="calculator-body">
-                  <h1>Simple Calculator</h1>
-                  <Output result={this.state.result}/>
-                  <Keypad onClick={this.onClick}/>
+              <div className="calculator">
+                  <div className="title">
+                      <h1>Calculator</h1>
+                  </div>
+                  <Output result={this.state.output}/>
+                  <Keypad onClick={this.handleClick}/>
               </div>
           </div>
       );

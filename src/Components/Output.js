@@ -4,8 +4,8 @@ export default class Output extends Component {
     render() {
         let {result} = this.props
         return (
-            <div>
-                <p>{result}</p>
+            <div id="display">
+                <span>{result}</span>
             </div>
         )
     }
